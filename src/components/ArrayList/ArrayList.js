@@ -1,13 +1,7 @@
-import Carrito from "../Carrito/carrito";
 import "./arrayList.css"
-const ArrayList = () => {
+const ArrayList = ({children}) => {
     return <div className="menuContainer">
-        <ol className="menu">
-            <li>Inicio</li>
-            <li>Nosotros</li>
-            <li>Mision</li>
-            <Carrito/>
-        </ol>
+        {children}
     </div>;
 }
 export default ArrayList;
